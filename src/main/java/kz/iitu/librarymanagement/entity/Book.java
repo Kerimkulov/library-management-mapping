@@ -45,10 +45,6 @@ public class Book {
         this.genreList = genreList;
     }
 
-//    public Library getLibrary() {
-//        return library;
-//    }
-
     public void setLibrary(Library library) {
         this.library = library;
     }

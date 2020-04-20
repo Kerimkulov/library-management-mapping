@@ -30,20 +30,12 @@ public class Genre {
         this.genre_name = genre_name;
     }
 
-//    public List<Book> getBookList() {
-//        return bookList;
-//    }
-
-//    public void setBookList(List<Book> bookList) {
-//        this.bookList = bookList;
-//    }
 
     @Override
     public String toString() {
         return "Genre{" +
                 "id=" + id +
                 ", genre_name='" + genre_name + '\'' +
-//                ", bookList=" + bookList +
                 '}';
     }
 }
