@@ -73,14 +73,6 @@ public class Client implements UserDetails {
     @OneToMany(mappedBy = "client", fetch = FetchType.LAZY)
     private List<ClientBook> clientBookList;
 
-    public List<ClientBook> getClientBookList() {
-        return clientBookList;
-    }
-
-    public void setClientBookList(List<ClientBook> clientBookList) {
-        this.clientBookList = clientBookList;
-    }
-
     public void bringBook(Book book){
         this.getClientBookList().remove(book);
         setClientBookList(this.getClientBookList());

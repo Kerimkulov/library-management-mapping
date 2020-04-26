@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d86b7f3-68fd-4bac-88f8-683a82fd904f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library-management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/library-management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/config/JwtTokenGeneratorFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/config/JwtTokenGeneratorFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/BookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/BookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/ClientBookDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/ClientBookDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/dao/ClientDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/ClientBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/ClientBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kz/iitu/librarymanagement/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/config/JwtTokenGeneratorFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/config/JwtTokenGeneratorFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/BookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/ClientBookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/ClientBookDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/dao/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/ClientBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/ClientBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/entity/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kz/iitu/librarymanagement/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +85,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Новая папка (2)/Новая папка/Арманай/library" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../remont" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -174,7 +134,9 @@
       <workItem from="1587711283390" duration="1262000" />
       <workItem from="1587809906944" duration="727000" />
       <workItem from="1587896202443" duration="3027000" />
-      <workItem from="1587909865931" duration="2932000" />
+      <workItem from="1587909865931" duration="4775000" />
+      <workItem from="1587916353392" duration="220000" />
+      <workItem from="1587922155807" duration="3484000" />
     </task>
     <servers />
   </component>
@@ -214,10 +176,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="183" y="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1586709230374" />
-    <state x="473" y="155" key="FileChooserDialogImpl" timestamp="1587665426333">
+    <state x="473" y="155" key="FileChooserDialogImpl" timestamp="1587922231232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="473" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587665426333" />
+    <state x="473" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587922231232" />
     <state x="619" y="307" key="Github.ShareDialog" timestamp="1587105815560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -226,38 +188,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="476" y="119" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587099592472" />
-    <state width="1493" height="36" key="GridCell.Tab.0.bottom" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.0.bottom" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.0.center" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.0.center" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.0.left" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.0.left" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.0.right" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.0.right" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.1.bottom" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.1.bottom" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.1.center" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.1.center" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.1.left" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.1.left" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
-    <state width="1493" height="36" key="GridCell.Tab.1.right" timestamp="1587913137861">
+    <state width="1493" height="477" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
+    <state width="1493" height="477" key="GridCell.Tab.1.right" timestamp="1587915078427">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="36" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587913137861" />
+    <state width="1493" height="477" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587915078427" />
     <state width="1493" height="101" key="GridCell.Tab.2.bottom" timestamp="1587898091894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

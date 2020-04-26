@@ -29,6 +29,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public void creatClient(Client client) {
+        client.setPassword(passwordEncoder.encode(client.getPassword()));
         clientRepository.save(client);
     }
 
@@ -63,7 +64,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         Client client =  clientRepository.findByUsername(s);
         if (client == null){
-            throw new UsernameNotFoundException("Client " + client + " not found");
+            throw new UsernameNotFoundException("Client " + s + " not found");
         }
         return client;
     }

@@ -35,15 +35,6 @@ public class Book {
     @OneToMany(mappedBy = "book", fetch = FetchType.LAZY)
     private List<ClientBook> clientBookList;
 
-
-    public int getBook_quantity() {
-        return book_quantity;
-    }
-
-    public void setBook_quantity(int book_quantity) {
-        this.book_quantity = book_quantity;
-    }
-
     public void increaseBookQuantity(){
         this.setBook_quantity(this.getBook_quantity()+1);
     }
