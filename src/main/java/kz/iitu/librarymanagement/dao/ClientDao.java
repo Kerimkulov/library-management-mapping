@@ -1,5 +1,6 @@
 package kz.iitu.librarymanagement.dao;
 
+import io.swagger.annotations.ApiOperation;
 import kz.iitu.librarymanagement.entity.Book;
 import kz.iitu.librarymanagement.entity.Client;
 import kz.iitu.librarymanagement.entity.ClientBook;
@@ -17,29 +18,32 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/api/clients")
 public class ClientDao {
 
     @Autowired
     private UserService userService;
 
+    @ApiOperation(value = "Hello message")
     @GetMapping("/hello")
     public String hello(){
         return "Hello world!";
     }
 
+    @ApiOperation(value = "LIst of all clients")
     @GetMapping("")
     public List<Client> clientList(){
         return userService.getAllClients();
     }
 
-
+    @ApiOperation(value = "Get client by ID")
     @GetMapping("/{id}")
     public Client getById(@PathVariable("id") Long id)
     {
         return userService.findClientById(id);
     }
 
+    @ApiOperation(value = "Client registration")
     @PostMapping("/signUp")
     public void newClient(@RequestBody Client client){
         System.out.println("user = " + client);
@@ -50,13 +54,14 @@ public class ClientDao {
     }
 
 
-
-    @PatchMapping("/{id}")
+    @ApiOperation(value = "Update client by ID")
+    @PatchMapping("/patch/{id}")
     public void updateClientType(@PathVariable("id") Long id,
                                    @RequestParam UserType userType){
         userService.updateClientType(userType,id);
     }
 
+    @ApiOperation(value = "Delete client by ID")
     @DeleteMapping("/{id}")
     public void removeClient(@PathVariable Long id){
         userService.deleteClient(id);

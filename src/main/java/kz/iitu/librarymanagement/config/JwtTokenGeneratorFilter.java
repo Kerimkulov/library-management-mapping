@@ -38,6 +38,7 @@ public class JwtTokenGeneratorFilter extends UsernamePasswordAuthenticationFilte
             UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
                     creds.getUsername(), creds.getPassword(), Collections.emptyList()
             );
+            System.out.println(authenticationToken);
             return authenticationManager.authenticate(authenticationToken);
         }catch (IOException e) {
             throw new RuntimeException(e);
@@ -51,10 +52,11 @@ public class JwtTokenGeneratorFilter extends UsernamePasswordAuthenticationFilte
                 .setSubject(authResult.getName())
                 .claim("authorities", authResult.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority).collect(Collectors.toList()))
+                .setIssuedAt(new java.sql.Date(now))
                 .setExpiration(new Date(now + 60*60 * 1000))
                 .signWith(SignatureAlgorithm.HS512, "secret-key".getBytes())
                 .compact();
-
+        System.out.println(token);
         response.addHeader("Authorization", "Bearer " +  token);
 
     }

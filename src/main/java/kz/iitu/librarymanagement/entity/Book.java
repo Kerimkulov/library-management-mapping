@@ -1,9 +1,16 @@
 package kz.iitu.librarymanagement.entity;
 
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+
+@Data
 @Entity
 public class Book {
     @Id
@@ -37,52 +44,6 @@ public class Book {
         this.book_quantity = book_quantity;
     }
 
-    public List<Genre> getGenreList() {
-        return genreList;
-    }
-
-    public void setGenreList(List<Genre> genreList) {
-        this.genreList = genreList;
-    }
-
-    public void setLibrary(Library library) {
-        this.library = library;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getBook_title() {
-        return book_title;
-    }
-
-    public void setBook_title(String book_title) {
-        this.book_title = book_title;
-    }
-
-    public String getBook_author() {
-        return book_author;
-    }
-
-    public void setBook_author(String book_author) {
-        this.book_author = book_author;
-    }
-
-    public String getPublished_year() {
-        return published_year;
-    }
-
-    public void setPublished_year(String published_year) {
-        this.published_year = published_year;
-    }
-
-
-
     public void increaseBookQuantity(){
         this.setBook_quantity(this.getBook_quantity()+1);
     }
@@ -90,15 +51,4 @@ public class Book {
         this.setBook_quantity(this.getBook_quantity()-1);
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", book_title='" + book_title + '\'' +
-                ", book_author='" + book_author + '\'' +
-                ", published_year=" + published_year +
-                ", book_quantity=" + book_quantity +
-                ", genreList=" + genreList +
-                '}';
-    }
 }

@@ -1,6 +1,8 @@
 package kz.iitu.librarymanagement.entity;
 
 import kz.iitu.librarymanagement.enums.UserType;
+import lombok.Data;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -9,6 +11,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
+@Data
 public class Client implements UserDetails {
 
     @Id
@@ -29,52 +32,10 @@ public class Client implements UserDetails {
     )
     private List<Role> roles;
 
-    public String getPhoneno() {
-        return phoneno;
-    }
-
-    public void setPhoneno(String phoneno) {
-        this.phoneno = phoneno;
-    }
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-
-    public UserType getUserType() {
-        return userType;
-    }
-
-    public void setUserType(UserType userType) {
-        this.userType = userType;
-    }
-
     @Override
     public String getPassword() {
         return password;
@@ -105,17 +66,6 @@ public class Client implements UserDetails {
         return true;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public List<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(List<Role> roles) {
-        this.roles = roles;
-    }
 
     @Enumerated(EnumType.STRING)
     private UserType userType;
@@ -136,16 +86,4 @@ public class Client implements UserDetails {
         setClientBookList(this.getClientBookList());
     }
 
-    @Override
-    public String toString() {
-        return "Client{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", phoneNo='" + phoneno + '\'' +
-                ", userType=" + userType +
-                ", clientBookList=" + clientBookList +
-                '}';
-    }
 }

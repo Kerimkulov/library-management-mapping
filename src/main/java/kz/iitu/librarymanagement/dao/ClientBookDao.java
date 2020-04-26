@@ -1,5 +1,6 @@
 package kz.iitu.librarymanagement.dao;
 
+import io.swagger.annotations.ApiOperation;
 import kz.iitu.librarymanagement.entity.Book;
 import kz.iitu.librarymanagement.entity.Client;
 import kz.iitu.librarymanagement.entity.ClientBook;
@@ -19,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/clientBooks")
+@RequestMapping("/api/clientBooks")
 public class ClientBookDao implements ApplicationEventPublisherAware {
 
     private ApplicationEventPublisher eventPublisher;
@@ -33,14 +34,19 @@ public class ClientBookDao implements ApplicationEventPublisherAware {
     @Autowired
     private ClientRepository clientRepository;
 
+    @ApiOperation(value = "List of all clients and their books")
     @GetMapping("")
     public List<ClientBook> clientBookList(){
         return clientBookRepository.findAll();
     }
+
+    @ApiOperation(value = "Get client and his book by ID")
     @GetMapping("/{id}")
     public ClientBook getById(@PathVariable("id") Long id){
         return clientBookRepository.findById(id).get();
     }
+
+    @ApiOperation(value = "Take book/give book to client")
     @PostMapping("/{bookId}/{clientId}")
     public ClientBook takeBook(@PathVariable("bookId") Long bookId,
                          @PathVariable("clientId") Long clientId){
@@ -66,6 +72,8 @@ public class ClientBookDao implements ApplicationEventPublisherAware {
         }
         return null;
     }
+
+    @ApiOperation(value = "Return book")
     @DeleteMapping("/{bookId}/{clientId}")
     public ClientBook bringBook(@PathVariable("bookId") Long bookId, @PathVariable("clientId") Long clientId){
         Book book = this

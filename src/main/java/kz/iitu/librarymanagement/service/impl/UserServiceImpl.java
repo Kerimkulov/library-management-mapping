@@ -29,7 +29,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public void creatClient(Client client) {
-        client.setPassword(passwordEncoder.encode(client.getPassword()));
         clientRepository.save(client);
     }
 
@@ -38,8 +37,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         Client clientDb = clientRepository.findById(id).orElse(null);
 
         if(clientDb != null){
-            clientDb.setUsername(client.getUsername());
-            clientDb.setPassword(client.getPassword());
 
             clientRepository.save(clientDb);
         }
@@ -59,7 +56,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public void updateClientType(UserType userType, Long id) {
         Client client = clientRepository.findById(id).get();
-        client.setUserType(userType);
         clientRepository.save(client);
     }
 
