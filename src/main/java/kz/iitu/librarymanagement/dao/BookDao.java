@@ -49,7 +49,7 @@ public class BookDao {
     @PutMapping("/{id}")
     public Book updateBook(@PathVariable("id") Long id,
                            @RequestBody Book book){
-
+        book.setId(id);
         bookRepository.save(book);
         return book;
     }
